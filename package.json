@@ -19,6 +19,6 @@
   "peerDependencies": {
     "react-native": ">=0.20.0",
     "design-system-react-native": "git+ssh://git@github.com/ForceDotComLabs/design-system-react-native.git#master",
-    "react.force": "git+ssh://git@github.com/ivanbogdanov/react.force.git"
+    "react.force.datacontainer": "git+ssh://git@github.com/ivanbogdanov/react.force.datacontainer.git"
   }
 }
