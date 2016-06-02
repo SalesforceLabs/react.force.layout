@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ForceDotComLabs/react.force.layout#readme",
   "peerDependencies": {
     "react-native": ">=0.20.0",
-    "design-system-react-native": "git+ssh://git@github.com/ForceDotComLabs/design-system-react-native.git#master",
+    "react.force.base.theme": "git+ssh://git@github.com/ForceDotComLabs/react.force.base.theme.git#master",
     "react.force.datacontainer": "git+ssh://git@github.com/ForceDotComLabs/react.force.datacontainer.git"
   }
 }
