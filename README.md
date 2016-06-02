@@ -7,6 +7,6 @@
 
   ```
 
-  npm install git+ssh://git@github.com:ivanbogdanov/react.force.layout.git --save
+  npm install git+ssh://git@github.com:ForceDotComLabs/react.force.layout.git --save
 
   ```
