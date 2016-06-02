@@ -5,7 +5,7 @@ import React, {
   View
 } from 'react-native';
 
-import SLDS from 'design-system-react-native';
+import SLDS from 'react.force.base.theme';
 
 import LayoutSection from './LayoutSection';
 

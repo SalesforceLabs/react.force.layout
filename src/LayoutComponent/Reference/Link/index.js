@@ -6,7 +6,7 @@ import React, {
   TouchableOpacity
 } from 'react-native';
 
-import SLDS from 'design-system-react-native';
+import SLDS from 'react.force.base.theme';
 
 
 module.exports = React.createClass ({
