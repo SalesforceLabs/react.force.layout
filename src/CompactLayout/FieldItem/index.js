@@ -48,10 +48,11 @@ module.exports = React.createClass ({
   getLayoutComponents(){
     const comps = [];
     if(this.props.layoutItem.layoutComponents){
-      this.props.layoutItem.layoutComponents.map((layoutComponent)=>{
+      this.props.layoutItem.layoutComponents.map((layoutComponent,index)=>{
         if(layoutComponent && layoutComponent.value && this.props.hideFields.indexOf(layoutComponent.value)<0){
           comps.push (
             <LayoutComponent 
+              key={'layoutComponent_'+index}
               sobj={this.props.sobj} 
               layoutItem={layoutComponent} 
               onLayoutTap={this.props.onLayoutTap}

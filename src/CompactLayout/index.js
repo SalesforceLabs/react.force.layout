@@ -53,7 +53,8 @@ module.exports = React.createClass ({
       return this.context.compactLayout.fieldItems.map((layoutItem,index)=>{
         if(index){
           return (
-            <FieldItem 
+            <FieldItem
+            key={'fieldItem_'+index} 
             sobj={this.context.sobj} 
             layoutItem={layoutItem} 
             onLayoutTap={this.props.onLayoutTap}
