@@ -18,7 +18,6 @@
   "homepage": "https://github.com/ForceDotComLabs/react.force.layout#readme",
   "peerDependencies": {
     "react-native": ">=0.20.0",
-    "react.force.base.theme": "https://github.com/ForceDotComLabs/react.force.base.theme.git",
     "react.force.datacontainer": "https://github.com/ForceDotComLabs/react.force.datacontainer.git"
   }
 }
