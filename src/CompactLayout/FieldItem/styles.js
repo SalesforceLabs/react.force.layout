@@ -26,10 +26,10 @@
  
 'use strict';
 
-import React from 'react-native';
+import { StyleSheet } from 'react-native';
 
 
-module.exports = React.StyleSheet.create({
+module.exports = StyleSheet.create({
   container: {
     margin:10
   }

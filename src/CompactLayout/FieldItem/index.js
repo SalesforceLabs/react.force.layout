@@ -26,7 +26,9 @@
  
 'use strict';
 
-import React, {
+import React from 'react';
+
+import {
   Text,
   View
 } from 'react-native';
@@ -72,6 +74,6 @@ module.exports = React.createClass ({
       <SLDS.InputReadonly label={this.props.layoutItem.label}>
         { comps }
       </SLDS.InputReadonly>
-    )
+    );
   }
 });
