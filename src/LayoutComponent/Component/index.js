@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 import React from 'react';
@@ -49,6 +49,6 @@ module.exports = React.createClass ({
     if(val){
       return <SLDS.InputReadonly.ValueText>{val}</SLDS.InputReadonly.ValueText>;
     }
-    return null;
+    return <SLDS.InputReadonly.ValueText>{' '}</SLDS.InputReadonly.ValueText>;
   }
 });

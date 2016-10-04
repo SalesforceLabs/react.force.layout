@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 import React from 'react';
@@ -38,20 +38,20 @@ import SLDS from 'react.force.base.theme';
 import LayoutSection from './LayoutSection';
 
 module.exports = React.createClass ({
-  getDefaultProps(){
-    return {
-      sobj:{attributes:{}},
-      defaultLayout:{}
-    };
+  contextTypes: {
+    sobj: React.PropTypes.object,
+    compactLayout: React.PropTypes.object,
+    defaultLayout: React.PropTypes.object
   },
   getLayoutSections(){
-    if(this.props.defaultLayout && this.props.defaultLayout.detailLayoutSections && this.props.defaultLayout.detailLayoutSections.length){
-      return this.props.defaultLayout.detailLayoutSections.map((layoutSection)=>{
+    if(this.context.defaultLayout && this.context.defaultLayout.detailLayoutSections && this.context.defaultLayout.detailLayoutSections.length){
+      return this.context.defaultLayout.detailLayoutSections.map((layoutSection, index)=>{
         return (
-          <LayoutSection 
-          sobj={this.props.sobj} 
-          layoutItem={layoutSection} 
-          onLayoutTap={this.props.onLayoutTap}
+          <LayoutSection
+            key={'layoutSection_'+index}
+            sobj={this.context.sobj}
+            layoutItem={layoutSection}
+            onLayoutTap={this.props.onLayoutTap}
           />
         );
       });

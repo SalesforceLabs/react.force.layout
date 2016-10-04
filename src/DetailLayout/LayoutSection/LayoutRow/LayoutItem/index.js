@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 import React from 'react';
@@ -42,11 +42,12 @@ module.exports = React.createClass ({
 
   getBody(){
     if(this.props.layoutItem.layoutComponents){
-      return this.props.layoutItem.layoutComponents.map((layoutComponent)=>{
+      return this.props.layoutItem.layoutComponents.map((layoutComponent, index)=>{
         return (
-          <LayoutComponent 
-            sobj={this.props.sobj} 
-            layoutItem={layoutComponent} 
+          <LayoutComponent
+            key={'layoutComponent_'+index}
+            sobj={this.props.sobj}
+            layoutItem={layoutComponent}
             onLayoutTap={this.props.onLayoutTap}
             onSobjRequest={this.props.onSobjRequest}/>
         );

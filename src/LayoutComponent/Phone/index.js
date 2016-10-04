@@ -23,7 +23,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
- 
+
 'use strict';
 
 import React from 'react';
@@ -62,17 +62,17 @@ module.exports = React.createClass ({
     const value = this.props.sobj[this.props.layoutItem.details.name];
 //    const referenceType = this.props.layoutItem.details.referenceTo[this.props.layoutItem.details.referenceTo.length-1];
     return (
-      <TouchableOpacity 
+      <TouchableOpacity
         onPress={this.handlePress}>
         <View>
-            <SLDS.InputReadonly.ValueText 
+            <SLDS.InputReadonly.ValueText
               style={{
                 paddingLeft:22,
                 color:'#0070d2'
               }}>
-              {value}
+              {value?value:' '}
             </SLDS.InputReadonly.ValueText>
-            <View 
+            <View
               style={{
                 position:'absolute',
                 top:18,
@@ -80,8 +80,8 @@ module.exports = React.createClass ({
                 height:20,
                 width:20,
               }}>
-              <SLDS.Icons.Utility 
-                name='call' 
+              <SLDS.Icons.Utility
+                name='call'
                 style={{
                   width:16,
                   height:16
